@@ -1,0 +1,2 @@
+Vytvoriť program, ktorý vypíše moje meno (min 5 písmen) dlzka str stvorca bude 10px
+vykreslené pomocou štvorčekov zo súboru pixel_letters.jpg
