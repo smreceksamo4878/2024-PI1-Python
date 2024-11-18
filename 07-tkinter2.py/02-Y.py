@@ -1,29 +1,30 @@
-import tkinter
-canvas=tkinter.Canvas()
-canvas.pack()
+fo=input("zadaj hex farby obrysu : " )
+fv=input("zadaj hex farby vyplne : " )
+s=int(input("zadaj velkost stvorceka v pixeloch: "))
 
-f="#ff00ff"
+import tkinter
+canvas=tkinter.Canvas(height=500, width=500)
+canvas.pack()
 
 def yps(x,y):
     
     #\
-    canvas.create_rectangle(x,y,x+10,y+10, outline=f, fill=f)
-    canvas.create_rectangle(x,y+10,x+10,y+20)
-    canvas.create_rectangle(x+10,y+20,x+20,y+30)
+    canvas.create_rectangle(x,y,x+s,y+s, outline=fo, fill=fv)
+    canvas.create_rectangle(x,y+s,x+s,y+s*2, outline=fo, fill=fv)
+    canvas.create_rectangle(x+s,y+s*2,x+s*2,y+s*3, outline=fo, fill=fv)
     
     #/
-    canvas.create_rectangle(x+40,y,x+50,y+10)
-    canvas.create_rectangle(x+40,y+10,x+50,y+20)
-    canvas.create_rectangle(x+30,y+20,x+40,y+30)
+    canvas.create_rectangle(x+s*4,y,x+s*5,y+s, outline=fo, fill=fv)
+    canvas.create_rectangle(x+s*4,y+s,x+s*5,y+s*2, outline=fo, fill=fv)
+    canvas.create_rectangle(x+s*3,y+s*2,x+s*4,y+s*3, outline=fo, fill=fv)
 
     #│
-    canvas.create_rectangle(x+20,y+30,x+30,y+40)
-    canvas.create_rectangle(x+20,y+40,x+30,y+50)
-    canvas.create_rectangle(x+20,y+50,x+30,y+60)
-    canvas.create_rectangle(x+20,y+60,x+30,y+70)
+    canvas.create_rectangle(x+s*2,y+s*3,x+s*3,y+s*4, outline=fo, fill=fv)
+    canvas.create_rectangle(x+s*2,y+s*4,x+s*3,y+s*5, outline=fo, fill=fv)
+    canvas.create_rectangle(x+s*2,y+s*5,x+s*3,y+s*6, outline=fo, fill=fv)
+    canvas.create_rectangle(x+s*2,y+s*6,x+s*3,y+s*7, outline=fo, fill=fv)
+
 
 yps(10,10)
 
-
 tkinter.mainloop()
-
