@@ -17,6 +17,26 @@ for i in range(n_dni):
 avg_tep=sucet/n_dni
 print(f"priemerna teplota v mesiaci je {avg_tep}°C")
 
+avg_temp=[]
+
 for i in range(30):
     if teploty[i]<avg_tep:
-        print(f"dni z podpriemernou teplotou: {i+1}.den")
+        avg_temp.append(teploty[i])
+       
+print(f"dni z podpriemernou teplotou: {avg_temp}")
+
+max_tep = teploty[0]
+
+for i in teploty[1:]:
+    if i > max_tep:
+        max_tep = i
+
+print("Najväčšie číslo je:", max_tep)
+
+min_tep=teploty[0]
+
+for i in teploty[1:]:
+    if i<min_tep:
+        min_tep=i
+
+print("najmensia teplota je: ", min_tep)
