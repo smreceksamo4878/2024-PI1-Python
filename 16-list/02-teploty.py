@@ -21,7 +21,7 @@ avg_temp=[]
 
 for i in range(30):
     if teploty[i]<avg_tep:
-        avg_temp.append(teploty[i])
+        avg_temp.append(i+1)
        
 print(f"dni z podpriemernou teplotou: {avg_temp}")
 
@@ -31,7 +31,7 @@ for i in teploty[1:]:
     if i > max_tep:
         max_tep = i
 
-print("Najväčšie číslo je:", max_tep)
+print("najvecsia teplota je:", max_tep)
 
 min_tep=teploty[0]
 

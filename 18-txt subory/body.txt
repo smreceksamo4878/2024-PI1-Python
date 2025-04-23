@@ -1,0 +1,12 @@
+o
+red
+100 100
+r
+green
+200 150
+r
+blue
+150 300
+o
+magenta
+16 250
