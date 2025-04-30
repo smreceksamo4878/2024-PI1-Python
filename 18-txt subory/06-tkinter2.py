@@ -5,13 +5,6 @@ canvas.pack()
 
 subor=open("body.txt")
 
-
-# for i in range(3):
-#     tvar=subor.readline()
-#     if tvar=="o":
-#         canvas.create_oval(x)
-
-
 for i in range(4):
     tvar=subor.readline()
     farba=subor.readline()
