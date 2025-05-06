@@ -10,3 +10,6 @@ blue
 o
 magenta
 16 250
+o
+yellow
+300 290
